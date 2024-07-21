@@ -1,0 +1,11 @@
+#o=n*n drop constants o(n) 
+def squared_number(numbers):
+    square = []
+    for n in numbers:
+        square.append(n * n)
+    return square
+
+numbers = [2, 3, 4, 5]
+squared_numbers = squared_number(numbers)
+for n in squared_numbers:
+    print(n)
