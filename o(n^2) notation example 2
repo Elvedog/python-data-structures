@@ -1,0 +1,11 @@
+numbers = [3, 6, 2, 4, 3, 6, 8, 9]
+
+duplicate=None
+for i in range(len(numbers)): #n^2 iterations we will keep the fastest growing term so this will be o(n^2) notation
+    for j in range(i + 1, len(numbers)):
+        if numbers[i] == numbers[j]:
+            duplicate= numbers[i]
+            break  # Stop the inner loop
+for i in range(len(numbers)):    # n iterations
+    if numbers[i] == duplicate:
+        print(i)
