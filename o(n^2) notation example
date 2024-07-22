@@ -7,4 +7,4 @@ for i in range (len(numbers)):
             break
  # o(n^2) time=a*n^2 + b drop constants, its n^2 because we are running 2 for loops
  # i+1 ensures that you are not comparing same elements and starts from next element
-#the inner loop goes to completion before the next iteration of the outer loop unless a duplicate is found in which case it breaks early
+#the inner loop goes to completion before the next iteration of the outer loop (only compares 1 number from outer loop at a time) unless a duplicate is found in which case it breaks early
