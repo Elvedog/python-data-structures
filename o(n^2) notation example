@@ -1,0 +1,10 @@
+numbers = [3,6,2,4,3,6,8,9]
+
+for i in range (len(numbers)):
+    for j in range (i+1,len(numbers)):
+        if numbers[i] == numbers[j]:
+            print(numbers[i]+ "is a duplicate")
+            break
+ # o(n^2) time=a*n^2 + b drop constants, its n^2 because we are running 2 for loops
+ # i+1 ensures that you are not comparing same elements and starts from next element
+#the inner loop goes to completion before the next iteration of the outer loop unless a duplicate is found in which case it breaks early
